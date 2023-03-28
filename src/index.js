@@ -2,6 +2,7 @@ const form = document.querySelector('form');
 const quoteList = document.querySelector('#quote-list');
 
 form.addEventListener('submit', event => {
+    
   event.preventDefault();
   const formData = new FormData(event.target);
   const newQuote = formData.get('quote');
