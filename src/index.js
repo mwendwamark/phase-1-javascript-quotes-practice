@@ -2,7 +2,7 @@ const form = document.querySelector('form');
 const quoteList = document.querySelector('#quote-list');
 
 form.addEventListener('submit', event => {
-    
+
   event.preventDefault();
   const formData = new FormData(event.target);
   const newQuote = formData.get('quote');
@@ -24,8 +24,8 @@ form.addEventListener('submit', event => {
         <p class="mb-0">${data.quote}</p>
         <footer class="perventsquote-footer">${data.author}</footer>
         <br><br>
-        <button class="btn-success like-btn">Likes: <span>${data.likes}</span></button>
-        <button class="btn-danger delete-btn">Delete</button>
+        <button class="btn-done like-btn">Likes: <span>${data.likes}</span></button>
+        <button class="btn-notdone delete-btn">Delete</button>
       </perventsquote>
     `;
     quoteList.appendChild(newLi);
